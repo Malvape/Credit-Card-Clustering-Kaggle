@@ -1,7 +1,8 @@
 {
     "name": "Kaggle CCardClust Dev Container",
     "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
-    "postCreateCommand": "pip install kaggle && sh .devcontainer/setup-kaggle.sh",
+    "postCreateCommand": 
+      "pip3 install kaggle && pip3 install numpy && pip3 install scikit-learn && pip3 install seaborn && pip3 install matplotlib && pip3 install pandas && sh .devcontainer/setup-kaggle.sh",
     "remoteUser": "vscode"
   }
   
