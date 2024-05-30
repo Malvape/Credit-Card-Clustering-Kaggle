@@ -4,7 +4,9 @@ I did use principal component analysis to separate different types of users of c
 
 the Ipynb. file is [here](https://github.com/Malvape/Credit-Card-Clustering-Kaggle/blob/3D/Solucion.ipynb) there is the detailed step by step solution. And the following are the graphs i made.
 
-'''python
+
+
+```python
 n_clusters=30
 cost=[]
 for i in range(1,n_clusters):
@@ -14,18 +16,17 @@ for i in range(1,n_clusters):
 
 plt.plot(cost, 'bx-')
 
-'''
+```
 
 ![image](https://github.com/Malvape/Credit-Card-Clustering-Kaggle/assets/41355722/6d46b394-ef5f-45a3-a0e7-5e29d4decc44)
 
 from there i decided to take 10 clusters, and plt them.
 
-'''python
+```python
 for c in clusters:
     grid= sns.FacetGrid(clusters, col='cluster')
     grid.map(plt.hist, c)
-
-'''
+```
 
 
 ![image](https://github.com/Malvape/Credit-Card-Clustering-Kaggle/assets/41355722/ec6ac654-62af-4608-8be7-9182ffe5fe9a)
@@ -45,7 +46,7 @@ for c in clusters:
 ![image](https://github.com/Malvape/Credit-Card-Clustering-Kaggle/assets/41355722/5759b8e0-48a9-4b88-a3a3-643f1dc27d90)
 
 Finally the PCA plot with 3 axis.
-'''python
+```python
 dist = 1 - cosine_similarity(X)
 
 pca = PCA(3)
@@ -99,7 +100,7 @@ ax.legend()
 ax.set_title("Customers Segmentation based on their Credit Card usage bhaviour.")
 plt.show()
 
-'''
+```
 
 ![image](https://github.com/Malvape/Credit-Card-Clustering-Kaggle/assets/41355722/c92597ef-afb6-464c-8f08-aad1f1b4b3fa)
 
