@@ -1,6 +1,6 @@
 # Credit-Card-Clustering-Kaggle
 My solution to the credit card clustering problem of kaggle.
-I did use principal component analysis to separate different types of users of credi card accordin to the [provided dataset](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata).
+I used principal component analysis to separate different types of credit card users according to the [provided dataset](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata).
 
 the Ipynb. file is [here](https://github.com/Malvape/Credit-Card-Clustering-Kaggle/blob/3D/Solucion.ipynb) there is the detailed step by step solution. And the following are the graphs i made.
 
