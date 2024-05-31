@@ -20,7 +20,7 @@ plt.plot(cost, 'bx-')
 
 ![image](https://github.com/Malvape/Credit-Card-Clustering-Kaggle/assets/41355722/6d46b394-ef5f-45a3-a0e7-5e29d4decc44)
 
-from there i decided to take 10 clusters, and plt them.
+from there i decided to take 10 clusters, and plot them.
 
 ```python
 for c in clusters:
